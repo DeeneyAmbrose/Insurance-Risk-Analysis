@@ -1,0 +1,58 @@
+.map-view-main {
+  flex: 1;
+  position: "relative";
+  background-color: #443f4e;
+}
+.map-view-main h3 {
+  text-align: center;
+  color: white;
+}
+.leaflet-container {
+  z-index: 0; /* Ensure the map has a lower z-index */
+}
+.leaflet-tooltip.custom-tooltip {
+  background-color: white;
+  border-radius: 0px; /* Remove rounded corners */
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.leaflet-tooltip.custom-tooltip div {
+  font-size: 14px; /* Increase font size for text */
+}
+
+.leaflet-tooltip.custom-tooltip strong {
+  font-size: 16px; /* Slightly larger font for the event type */
+}
+.playback-control {
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  right: 10%;
+  z-index: 1000;
+  background: #443f4e;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.playback-control button {
+  margin-right: 10px;
+}
+
+.playback-control label {
+  margin-left: 10px;
+  color: white;
+}
+
+.playback-control input[type="number"] {
+  width: 50px;
+  margin-left: 5px;
+}
+
+.custom-marker-icon {
+  background: #b5eaf1;
+  border-radius: 50%;
+  border: none;
+}
